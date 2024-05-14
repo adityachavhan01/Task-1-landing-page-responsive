@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c173c;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f0e0e;
+    color: #87dd07;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensures the navbar is above other content */
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #9ceb13;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #f45708; /* Change color on hover */
+}
+.section-container{
+    margin: 10px;
+    padding: 10px;
+    display: flex; /* Display sections in a row */
+    overflow-x: auto; /* Allow horizontal scrolling if sections overflow */
+    width: 100%; /* Occupy full width of the viewport */
+}
+.sections {
+    margin: 30px;
+    padding: 10px;
+    height: 100vh;
+    background-color: #1c27a28a;
+    border-bottom: 1px solid rgb(154, 190, 36)878;
+    transition: transform 0.4s ease; /* Adding transition for smooth effect */
+}
+.sections:hover {
+    transform: scale(0.95); /* Decreasing size on hover */
+    box-shadow: 0px 4px 8px rgba(255, 242, 0, 0.686); /* Adding box shadow effect */
+}
+
+#section-1{
+    background-image: url(prodigy.png);
+    background-size: 100% 100%;
+}
+.sections h2 {
+    font-size: 3rem;
+    color: #eaff00;
+}
+.sections h6 {
+    font-size: 1rem;
+    color: #eaff00;
+}
+
